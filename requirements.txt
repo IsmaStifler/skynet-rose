@@ -1,5 +1,4 @@
-setuptools<58
-MongoEngine>=0.20
+pip install ez_setup
 
 
 future
