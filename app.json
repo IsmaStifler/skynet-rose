@@ -1,8 +1,8 @@
 
 {
-  "name": "Miss Rose",
-  "logo": "https://telegra.ph/file/48522f7be29b993a19e60.jpg",
-  "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
+  "name": "SKYNET IA",
+  "logo": "https://telegra.ph/file/a4b88898eb9b606c0650a.png",
+  "description": "Neural net-based artificial intelligence",
   "keywords": [
     "telegram",
     "best",
@@ -10,7 +10,7 @@
     "manager",
     "3"
   ],
-  "repository": "hhttps://github.com/FayasKKD/Miss-Rose-Bot",
+  "repository": "https://github.com/IsmaStifler/skynet-rose",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
@@ -18,15 +18,15 @@
     },
     "TOKEN": {
       "description": "Your bot token, as a string.",
-      "value": ""
+      "value": "5356785853:AAGisnpPjaN3aZr5olbH_FCBU_G7mlbl2ks"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": ""
+      "value": "264662416"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": ""
+      "value": "Ismastif"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -34,11 +34,11 @@
     },
     "URL": {
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
-      "value": ""
+      "value": "https://git.heroku.com/skynet-rose.git"
     },
     "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
-      "value": "-1007777777777"
+      "value": "-677795691"
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
@@ -81,7 +81,7 @@
     {
       "plan": "heroku-postgresql",
       "options": {
-        "version": "10"
+        "version": "14"
       }
     }
   ]
