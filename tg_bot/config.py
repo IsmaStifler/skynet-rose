@@ -10,12 +10,12 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "5356785853:AAGisnpPjaN3aZr5olbH_FCBU_G7mlbl2ks"
+    API_KEY = "5356785853:AAHb0xAu-246CBE5Q2z2-493Xjkbgrve1f4"
     OWNER_ID = "264662416" # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "Ismastif"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://root:root@localhost:5432/skynetdata'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'sqldbtype://root:root@localhost:5432/skynetdata1'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
