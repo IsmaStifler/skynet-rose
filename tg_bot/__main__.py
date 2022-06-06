@@ -20,7 +20,6 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hey there! My name is *{}*, I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Join my [news channel](https://t.me/ProIndians) to get information on all the latest updates.
 """
 
 HELP_STRINGS = """
@@ -30,17 +29,12 @@ I have lots of handy features, such as flood control, a warning system, a note k
 *Helpful commands*:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
-- /donate: Gives you info on how to support me and my creator.
 
 {}
 All commands can be used with the following: / !
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "If you have any bugs or questions on how to use me, have a look at my [Group](https://t.me/ProHelpDesk), or head to @ProIndians.")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Heya, glad to hear you want to donate!."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -135,7 +129,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                     reply_markup=InlineKeyboardMarkup(
                                         [[InlineKeyboardButton(text="Add me to your chat!", url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
-        update.effective_message.reply_text("Hello all Join @ProIndians.")
+        update.effective_message.reply_text("Hello all")
 
 
 # for test purposes
@@ -364,7 +358,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 264662416 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
