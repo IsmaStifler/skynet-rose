@@ -1,5 +1,5 @@
 setuptools<58
-
+MongoEngine>=0.20
 
 
 future
@@ -23,4 +23,4 @@ bs4
 telegraph
 
 
-MongoEngine>=0.20
+
