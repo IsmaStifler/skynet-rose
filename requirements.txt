@@ -1,3 +1,7 @@
+setuptools<58
+
+
+
 future
 emoji
 requests
