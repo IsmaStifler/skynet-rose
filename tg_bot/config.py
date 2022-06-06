@@ -15,7 +15,7 @@ class Config(object):
     OWNER_USERNAME = "Ismastif"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://root:root@iaskynetbot.herokuapp.com:5432/skynetdata'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'sqldbtype://root:root@localhost:5432/skynetdata'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
